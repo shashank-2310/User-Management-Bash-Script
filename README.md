@@ -1,7 +1,3 @@
-Here’s a **GitHub README.md** for your project that explains everything clearly:
-
-***
-
 # **User Account Management Script**
 
 A Bash script for managing user accounts on Linux systems. This script provides options to create, delete, reset passwords, and list user accounts, along with a help menu.
@@ -39,7 +35,7 @@ A Bash script for managing user accounts on Linux systems. This script provides 
 ## **Usage**
 
 ```bash
-./user_mgmt.sh [OPTIONS]
+./user_management.sh [OPTIONS]
 ```
 
 ### **Available Options**
@@ -55,11 +51,20 @@ A Bash script for managing user accounts on Linux systems. This script provides 
 ## **Examples**
 
 ```bash
-./user_mgmt.sh --create        # Create a new user
-./user_mgmt.sh --reset         # Reset password for a user
-./user_mgmt.sh --delete        # Delete a user
-./user_mgmt.sh --list          # Show all users with UID
-./user_mgmt.sh --help          # Display help
+./user_management.sh -c              # Create a new user
+./user_management.sh -r              # Reset password for a user
+./user_management.sh -d              # Delete a user
+./user_management.sh -l              # Show all users with UID
+./user_management.sh -h              # Display help
+```
+OR
+
+```bash
+./user_management.sh --create        # Create a new user
+./user_management.sh --reset         # Reset password for a user
+./user_management.sh --delete        # Delete a user
+./user_management.sh --list          # Show all users with UID
+./user_management.sh --help          # Display help
 ```
 
 ***
@@ -71,7 +76,7 @@ A Bash script for managing user accounts on Linux systems. This script provides 
 *   Ensure the script has **execute permission**:
 
 ```bash
-chmod +x user_mgmt.sh
+chmod +x user_management.sh
 ```
 
 ***
@@ -90,8 +95,3 @@ chmod +x user_mgmt.sh
 *   Password input is hidden using `read -s`.
 *   Script must be run by a user with `sudo` privileges.
 *   Does **not** display passwords after creation/reset for security reasons.
-
-***
-
-
-Would you like me to **add a section with screenshots of sample runs** and a **GitHub badge for Bash scripts**? Or should I also include **installation instructions and a troubleshooting section**?
